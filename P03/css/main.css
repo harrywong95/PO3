@@ -1,76 +1,533 @@
-.col-home{
-  background-color: #FF5851;
-  border: 2em solid white;
-  height: 100vh;
-  width: 100%;
+body{
+  margin:0;
+  padding:0;
+  font-family: verdana;
+  background: #fff;
 }
+
+#logo{
+  position: absolute;
+  left:5em;
+  top:1.75em;
+}
+
+#twitter{
+  position: fixed;
+  right:1.5%;
+  top:50%;
+  color: black;
+}
+
+#instagram{
+  position: fixed;
+  right:1.5%;
+  top:53%;
+  color: black;
+}
+
+#facebook{
+  position: fixed;
+  right:1.7%;
+  top:56%;
+  color: black;
+}
+
+
+.sidebar{
+  position: fixed;
+  top:0;
+  left: -30em;
+  background: white;
+  width: 30em;
+  height: 100%;
+  transition: .3s;
+  z-index: 1;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.active{
+  left:0;
+}
+
+ul{
+  margin-top: 50%;
+  padding: 1em 0;
+}
+
+ul li{
+  list-style: none;
+}
+
+ul li a{
+  padding: 1em 2em;
+  color: #696969;
+  display: block;
+  text-decoration: none;
+  font-family: secular one;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+ul li a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+.sidebarBtn{
+  position: absolute;
+  top: 50%;
+  right:-14%;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.sidebarBtn p{
+  position: absolute;
+  font-size: .6em;
+  top: 4.75em;
+  right: .1em;
+  bottom: 0;
+  font-family: open sans;
+  font-weight: 900;
+  color: black;
+  letter-spacing: .5em;
+}
+
+.sidebarBtn.toggle p{
+  opacity: 0;
+}
+
+.sidebarBtn:focus{
+  outline: none;
+}
+
+.sidebarBtn span{
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #262626;
+  position: absolute;
+  top:24px;
+  transition: .3s;
+}
+
+.sidebarBtn span:before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left:0px;
+  width: 100%;
+  height: 3px;
+  background: #262626;
+  transition: .3s;
+}
+
+.sidebarBtn span:after{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left:0px;
+  width: 100%;
+  height: 3px;
+  background: #262626;
+  transition: .3s;
+}
+
+.sidebarBtn.toggle span{
+  left: -10em;
+  background: transparent;
+}
+
+.sidebarBtn.toggle span:before{
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.sidebarBtn.toggle span:after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* Content */
+
+/* for homepage titles */
+.project h1{
+  font-family: secular one;
+  font-weight: 900;
+  line-height: 0.8em;
+  margin-left: 2em;
+  margin-bottom: 1.1em;
+}
+
+/* for works page titles  */
+.project1 h1{
+  font-family: secular one;
+  font-weight: 900;
+  line-height: 0.8em;
+  margin-left: 4em;
+  margin-bottom: 1.1em;
+  font-size: 9em;
+}
+
 
 .welcome{
-    font-family: Roboto;
-    font-size: 10em;
+    font-family: secular one;
+    font-size: 12em;
     font-weight: black;
     color: #1C1B20;
-    margin-left: 5em;
-    margin-top: 1.6em;
+    margin-top: 25%;
 }
 
-.col-50{
-  background-color: #FFFFFF;
-  width:50%;
+/* homepage paragraphs */
+.firstpara{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  width: 42%;
+  margin-top: 7.6em;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.secondpara{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  width: 80%;
+  margin-top: 7.6em;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.thirdpara{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  width: 80%;
+  margin-top: 7.6em;
+  font-size: 0.9em;
+  line-height: 2em;
 }
 
 
-.col{
-  background-color: #E0E0E0;
-  height: 100vh;
+.homeimage{
+  margin-top: 10em;
+  width: 50%;
+  position: absolute;
+  margin-left: -0.9375em;
 }
 
-.work1intro{
-  background-color: white;
-  height: 80vh;
+.homeimage h1{
+  font-size: 7rem;
 }
 
-.work1image{
-  background-color: #A0A0A0;
+.lenstitle h1{
+  font-size: 7rem;
+  color:#f2544d;
 }
 
-.introduction{
-  height: 80vh;
+.homeimage img{
+  width: 90%;
 }
 
-.aboutimage{
-  height: 80vh;
-  background-color: #A0A0A0;
+.block{
+  width: 50%;
+  margin-left: 50%;
+  position: absolute;
 }
 
-.contact{
-  background-color: #606060;
-  height: 30vh
+.block h2{
+  margin-top: 10em;
+}
+
+.seemywork{
+  text-decoration: none;
+  font-family: Crimson;
+  background: none;
+  border: none;
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  color: #696969;
+  position: absolute;
+}
+
+.seemywork:hover{
+  color: #FF5851;
+  cursor: pointer;
+}
+
+.seemywork:focus{
+  outline: none;
+}
+
+.seemywork1{
+  text-decoration: none;
+  font-family: Crimson;
+  background: none;
+  border: none;
+  margin-top: .5em;
+  font-size: 1.5em;
+  margin-left: -.25em;
+  font-style: italic;
+  font-weight: bold;
+  color: #696969;
+  position: absolute;
+}
+
+.seemywork1:hover{
+  color: #FF5851;
+  cursor: pointer;
+}
+
+.seemywork1:focus{
+  outline: none;
+}
+
+.header1{
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+
+.header2{
+  font-family: Crimson;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.header3{
+  font-family: Crimson;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.header4{
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#col-50 h2{
+  margin-left: 14em;
+  position: absolute;
+  margin-top: -3.5em;
 }
 
 .projectimage{
-  background-color: #C0C0C0;
+  width: 100%;
 }
 
-.worksimage{
-  background-color: #C0C0C0;
-  height: 50vh;
+.col-12 img{
+  width: 100%;
+  margin-top: 11em;
 }
 
-.worksimage{
-  height: 50vh;
-}
-.worksimage2{
-  background-color: #A0A0A0;
-  height: 50vh;
+.col-12 h1{
+  margin-top: 1em;
+  position: absolute;
+  letter-spacing: .1em;
 }
 
-.project h1{
-  margin: 1em 1em 1em .4em;
+.frontright{
+  background-color: #FF5851;
+  height: 100%;
 }
 
-.project p {
-  padding: 1em;
+.worksheader2{
+  margin-top:13em;
+  margin-left: 3em;
+}
+
+.worksheader2 p{
+  font-family: open sans;
+  color: #696969;
+  font-size: 0.9em;
+  font-weight: 600;
+  width: 60%;
+  margin-top: 3em;
+}
+
+.thumbnails img{
+  width: 101%;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutme h1{
+  font-size: 3.5rem;
+  line-height: 1.25em;
+  margin-left:20%;
+  font-family: secular one;
+  font-weight: 900;
+}
+
+.aboutme h2{
+  font-size: 2rem;
+  font-style: italic;
+  font-family: crimson;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.aboutmepara h1{
+  font-family: secular one;
+  font-weight: 900;
+  color: #f2544d;
+  margin-left: 18%;
+  margin-top: 27%;
+}
+
+.aboutmepara p{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+    line-height: 2em;
+      font-size: 1.1em;
+      margin-left: 18%;
+      margin-top: 5%;
+}
+
+#contactinfo{
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #696969;
+  margin-left: 20%;
+  margin-top: 10%;
   line-height: 2em;
-  width: 70%;
+}
+
+.resume a{
+  text-decoration: none;
+  color: #696969;
+  font-family: crimson;
+  font-style: italic;
+  font-size: 1.5em;
+  margin-left: 30%;
+}
+
+.labels p{
+  margin: 0;
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  line-height: 2em;
+  font-size: 1.1em;
+  padding-bottom: 10em;
+  margin-left: 9%;
+}
+
+.summary h1{
+  margin-left: 4em;
+  font-family: secular one;
+  font-weight: 900;
+  color: #f2544d;
+  float: left;
+}
+
+.summary p{
+  width: 60%;
+  margin-left: 18%;
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  line-height: 2em;
+  margin-top: 5%;
+  float: left;
+}
+
+.col-50 img{
+  width: 101%;
+  height: 100%;
+  margin: 0;
+  float: left;
+}
+
+.workheader{
+  background-color: #512439;
+  height: 90vh;
+  width: 100%;
+}
+
+.workheader2{
+  background-color: #5ec6a3;
+  height: 90vh;
+  width: 100%;
+}
+
+.workstitle h1{
+  font-family: secular one;
+  font-weight: 900;
+  color: white;
+  font-size: 5em;
+  margin-top: 5%;
+}
+
+.workstitle h2{
+  font-family: crimson;
+  font-weight: 900;
+  color: white;
+  font-size: 2.5em;
+  margin-top: 40%;
+  font-style: italic;
+}
+
+.workstitle h3{
+  font-family: crimson;
+  font-weight: 900;
+  color: #7c3640;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 30%;
+}
+
+#vtlheader{
+  color: #3a7c66;
+}
+
+#work2header{
+  color: #5ec6a3;
+}
+
+.workstitle p{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #f8f8f8;
+  line-height: 2em;
+  margin-top: 5%;
+  font-size: .8em;
+  width: 80%;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    top: 100;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    color: #696969;
+    text-align: center;
+}
+
+.footer p{
+  font-family: Open Sans;
+  font-weight: 600;
+  color: #696969;
+  line-height: 2em;
+  font-size: .8em;
+  width: 80%;
+  text-align: left;
+  margin-top: 15%;
 }

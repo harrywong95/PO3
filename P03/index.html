@@ -7,56 +7,120 @@
 
   <title> Harry Wong Portfolio </title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Secular+One' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/grid.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidebarBtn').click(function(){
+        $('.sidebar').toggleClass('active');
+        $('.sidebarBtn').toggleClass('toggle');
+      })
+    })
+  </script>
 </head>
 
 <body>
 
-
-
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-50">
-        <h1 class="welcome"> MY <br> NAME IS  <br> HARRY. </h1>
-      </div>
-      <div class="col-50">
-      </div>
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="works.html">WORKS</a></li>
+        <li><a href="about.html">CONTACT</a></li>
+      </ul>
+      <button class="sidebarBtn">
+        <p>MENU</p>
+        <span> </span>
+      </button>
     </div>
-    <div class="row">
-      <div class="col project">
-        <h1> Project 1 </h1>
-        <p> Quick preivew of projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac diam in arcu imperdiet dignissim. Sed semper odio non felis finibus fringilla. Donec in dui tellus. Etiam ut eros sit amet sem vulputate efficitur vitae at justo. Curabitur vitae tempor diam. Quisque ut egestas ex. Donec blandit porttitor est quis posuere. Duis in luctus lorem. Duis suscipit accumsan ipsum, sit amet suscipit arcu pulvinar ut. Suspendisse potenti. Donec massa lacus, rhoncus eu est non, dictum ullamcorper ipsum. Mauris tincidunt enim eget turpis laoreet euismod.
-        </p>
-        <button>Learn More</button>
+
+    <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+    <a href="http://www.twitter.com"><i class="fa fa-twitter" id="twitter"></i></a>
+    <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
+    <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a>
+
+    <div class="page">
+      <section>
+        <div class="row">
+          <div class="col project">
+            <div class="col-50 frontright">
+              <h1 class="welcome"> MY <br> NAME IS  <br> HARRY. </h1>
+            </div>
+            <div class="col-50">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="col project">
+            <div class="col-6 block">
+              <h2> <span class="header2">a kiosk / mobile </span> <br><span class="header1"> mockup </span></h2>
+              <p class="firstpara"> View to Launch is a mockup kiosk / mobile application that was designed for Simon Fraser University's Satellite Design Team. This project showcases working prototypes, graphic posters, and videography.
+              </p>
+              <a href="work2.html"><button class="seemywork">See my work</button></a>
+            </div>
+            <div class="col-6 homeimage">
+              <h1> VIEW <br> TO<br> LAUNCH </h1>
+              <img src="img/home3.jpg" alt="ProjectOne">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+      <div class="row">
+          <div class="col project">
+            <div class="col-12 lenstitle">
+              <h1> LENS </h1>
+              <img src="img/home6.jpg" alt="ProjectTwo">
+            </div>
+            <div class="col-12">
+              <div id="col-50">
+                <h2> <span class="header3"> a mobile </span> <br> <span class="header4">speculative design </span> </h2>
+              </div>
+              <div class="col-25">
+                <p class="secondpara"> Lens is a speculative design project designed to comment on how difficult it is for
+  parents to find the right balance when it comes to
+  monitoring or controlling their children.
+                </p>
+              </div>
+              <div class="col-25">
+                <p class="thirdpara"> This project showcases mobile mockups, graphic posters, and videography to illustrate what Lens is, how it functions, and different types of scenarios that it can be used in.
+                </p>
+                <a href="work1.html"><button class="seemywork1">See my work</button></a>
+              </div>
+            </div>
+          </div>
       </div>
-      <div class="col projectimage">
-        <h1> Image </h1>
-      </div>
+      </section>
     </div>
-    <div class="row">
-      <div class="col projectimage">
-        <h1> Image </h1>
+    <div class="footer">
+      <div class="col-25">
       </div>
-      <div class="col project">
-        <h1> Project 2 </h1>
-        <p> Quick preivew of projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac diam in arcu imperdiet dignissim. Sed semper odio non felis finibus fringilla. Donec in dui tellus. Etiam ut eros sit amet sem vulputate efficitur vitae at justo. Curabitur vitae tempor diam. Quisque ut egestas ex. Donec blandit porttitor est quis posuere. Duis in luctus lorem. Duis suscipit accumsan ipsum, sit amet suscipit arcu pulvinar ut. Suspendisse potenti. Donec massa lacus, rhoncus eu est non, dictum ullamcorper ipsum. Mauris tincidunt enim eget turpis laoreet euismod.
-        </p>
-        <button>Learn More</button>
+      <div class="col-25">
+      </div>
+      <div class="col-25">
+        <p>harrywong95@gmail.com <br> @Harry_W</p>
+      </div>
+      <div class="col-25">
+        <p>Citations <br> StyleGuide <br> Github </p>
       </div>
     </div>
   </div>
-
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
-    </div>
-  </footer>
-
-
-
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

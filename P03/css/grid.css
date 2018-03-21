@@ -1,0 +1,68 @@
+
+.project{
+  height: 65em;
+  background-color: #F8F8F8;
+  padding: 0;
+}
+
+.project1{
+  height: 40em;
+  background-color: #F8F8F8;
+  padding: 0;
+}
+
+.project2{
+  height: 28em;
+  background-color: #F8F8F8;
+  padding: 0;
+}
+
+.project3{
+  height: 50em;
+  background-color: white;
+  padding: 0;
+}
+
+.project4{
+  height: 50em;
+  background-color: #F8F8F8;
+  padding: 0;
+}
+
+.page{
+  background-color: #F8F8F8;
+  border-left: 5em solid white;
+  border-right: 4em solid white;
+  border-top: 4em solid white;
+  padding: 0;
+}
+
+.col-33{
+  width: 33%;
+  display: inline-block;
+}
+
+.col-50{
+  width: 49.5%;
+  display: inline-block;
+  padding-bottom: 10%;
+}
+
+#col-50{
+  width: 49.5%;
+  display: inline-block;
+}
+
+.col-25{
+  width: 24%;
+  display: inline-block;
+}
+
+.col-12{
+  padding: 0;
+  margin: 0;
+}
+
+.col-100{
+  width: 100%;
+}
