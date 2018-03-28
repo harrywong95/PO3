@@ -19,132 +19,133 @@
   <link rel="stylesheet" href="css/grid.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.sidebarBtn').click(function(){
-        $('.sidebar').toggleClass('active');
-        $('.sidebarBtn').toggleClass('toggle');
-      })
-    })
-  </script>
 
 </head>
 
 <body>
 
-    <div class="sidebar">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="works.html">WORKS</a></li>
-        <li><a href="about.html">CONTACT</a></li>
-      </ul>
-      <button class="sidebarBtn">
-        <p>MENU</p>
-        <span> </span>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="index.html"><img src = "img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="works.html">projects</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#about">about</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row fullscreen" id="lens">
+      <div class="col-12">
+        <h1 id="titles1"> VIEW TO LAUNCH </h1>
+      </div>
     </div>
 
-    <section>
-      <div class="row">
-        <div class="col">
-          <div class="col-100 workheader2">
-            <div class="col-25">
-            </div>
-            <div class="col-25 workstitle">
-              <h2> a kiosk / mobile mockup </h2>
-              <h1> VIEW TO LAUNCH </h1>
-              <h3 id="vtlheader"> Brief </h3>
-              <p> Design : 2017 May - 2017 August <br> Role : Graphic Designer, UI/UX Designer <br> Team Members : Harry Wong, Abel Abraham, Mischa Price <br> Tools : Adobe Illustrator, Adobe Photoshop </p>
-            </div>
-            <div class="col-25 workstitle">
-              <h3 id="vtlheader"> Objective</h3>
-              <p> In an interaction design methods course, our team was given the task to design a solution for a designated group. This solution must be for a problem that the group is currently experiencing. </p>
-            </div>
-            <div class="col-25 workstitle">
-              <h3 id="vtlheader"> Response </h3>
-              <p> The group that we decided to choose was the SFU satellite design. A problem that they were facing was the inability to recruit new member. As a result we created an interface for a kiosk and mobile application to combat this problem. </p>
-            </div>
+    <div class="row space">
+      <div class="row justify-content-md-center">
+          <div class="col-auto">
+          </div>
+          <div class="col-md-3">
+            <h3 class="projecttitle"> Brief </h3>
+            <p class="projectpara"> Design : 2017 May - 2017 August <br> Role : Graphic Designer, UI/UX Designer <br> Team Members : Harry Wong, Abel Abraham, Mischa Price <br> Tools : Adobe Illustrator, Adobe Photoshop </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="projecttitle"> Objective</h3>
+            <p class="projectpara"> In an interaction design methods course, our team was given the task to design a solution for a designated group. This solution must be for a problem that the group is currently experiencing. </p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="projecttitle"> Response </h3>
+            <p class="projectpara"> The group that we decided to choose was the SFU satellite design. A problem that they were facing was the inability to recruit new member. As a result we created an interface for a kiosk and mobile application to combat this problem. </p>
           </div>
         </div>
       </div>
-    </section>
 
-  <div class="page">
-    <section>
-      <div class="row">
-        <div class="col">
-          <div class="col-50 summary">
-            <h1 id="work2header"> Summary  </h1>
-            <p> In an interaction design methods course, our team was given the task to design a solution for a designated group. The group that we encountered was the Simon Fraser University Satellite Design Team. Through observations, interviews, and workshops, we discovered that this team had a difficult time recruiting new members. Therefore, we decided aim towards finding solution for this problem.  </p>
-          </div>
-          <div class="col-50">
-            <img src="img/333poster.jpg">
-          </div>
+    <div class="row space">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+        </div>
+        <div class="col-xl-4">
+          <h1 class="projecttitle"> SUMMARY  </h1>
+          <p class="projectpara"> In an interaction design methods course, our team was given the task to design a solution for a designated group. The group that we encountered was the Simon Fraser University Satellite Design Team. Through observations, interviews, and workshops, we discovered that this team had a difficult time recruiting new members. Therefore, we decided aim towards finding solution for this problem.  </p>
+        </div>
+        <div class="col-xl-4">
+          <img id="vtlimage" src="img/333poster.jpg">
+        </div>
+        <div class="col-auto">
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div class="row">
-        <div class="col">
-
-          <div class="col-50">
-            <img src="img/concept.jpg">
-          </div>
-
-          <div class="col-50 summary">
-            <h1 id="work2header"> Process  </h1>
-            <p> As a group, we came up with the idea of a public kiosk and mobile application. The public kiosk would be placed among the public where team members can input their progress and achievements and display through the kiosk. From there, members of public will be able to understand what the Satellite Team is about and does. </p>
-          </div>
+    <div class="row space">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+        </div>
+        <div class="col-xl-4">
+          <img id="vtlimage" src="img/concept.jpg">
+        </div>
+        <div class="col-xl-4">
+          <h1 class="projecttitle"> PROCESS  </h1>
+          <p class="projectpara"> As a group, we came up with the idea of a public kiosk and mobile application. The public kiosk would be placed among the public where team members can input their progress and achievements and display through the kiosk. From there, members of public will be able to understand what the Satellite Team is about and does. </p>
+        </div>
+        <div class="col-auto">
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div class="row">
-        <div class="col">
-          <div class="col-50 summary">
-            <h1 id="work2header"> My Role  </h1>
-            <p> Throughout the weeks of this project, my main role was graphic and interface design. Each week, we were assigned posters to create in order to present our findings and ideas to our peers. These weeks were vital to our project as they were the building blocks to what our final product would become. I had designed posters for personas, ideas, cultural probes, and workshops. In addition, I also designed mock-ups for the mobile application and kiosk. </p>
-          </div>
-          <div class="col-50">
-            <img src="img/persona3.jpg"
-          </div>
+    <div class="row space">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+        </div>
+        <div class="col-xl-4">
+          <h1 class="projecttitle"> MY ROLE  </h1>
+          <p class="projectpara"> Throughout the weeks of this project, my main role was graphic and interface design. Each week, we were assigned posters to create in order to present our findings and ideas to our peers. These weeks were vital to our project as they were the building blocks to what our final product would become. I had designed posters for personas, ideas, cultural probes, and workshops. In addition, I also designed mock-ups for the mobile application and kiosk. </p>
+        </div>
+        <div class="col-xl-4">
+          <img id="vtlimage" src="img/persona3.jpg">
+        </div>
+        <div class="col-auto">
         </div>
       </div>
-    </section>
+    </div>
 
-    <section>
-      <div class="row">
-        <div class="col">
-
-          <div class="col-50">
-            <img src="img/home1.jpg">
-          </div>
-
-          <div class="col-50 summary">
-            <h1 id="work2header"> Final Product </h1>
-            <p> For the final showcase, we showcased a working prototype of our kiosk, a working prototype of our mobile application, as well as an informational poster. My task for this final week was creating the interface of the kiosk, as well as designing the informational poster. Our project garnered a tremendous response from the public, which resulted in a strong grade from our evaluators. </p>
-          </div>
+    <div class="row space">
+      <div class="row justify-content-md-center">
+        <div class="col-auto">
+        </div>
+        <div class="col-xl-4">
+          <img id="vtlimage" src="img/home1.jpg">
+        </div>
+        <div class="col-xl-4">
+          <h1 class="projecttitle"> FINAL PRODUCT </h1>
+          <p class="projectpara"> For the final showcase, we showcased a working prototype of our kiosk, a working prototype of our mobile application, as well as an informational poster. My task for this final week was creating the interface of the kiosk, as well as designing the informational poster. Our project garnered a tremendous response from the public, which resulted in a strong grade from our evaluators. </p>
+        </div>
+        <div class="col-auto">
         </div>
       </div>
-    </section>
-    <div class="footer">
-      <div class="col-25">
-      </div>
-      <div class="col-25">
-      </div>
-      <div class="col-25">
+    </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
         <p>harrywong95@gmail.com <br> @Harry_W</p>
       </div>
-      <div class="col-25">
+      <div class="col-md-6">
         <p>Citations <br> StyleGuide <br> Github </p>
       </div>
     </div>
+  </footer>
 
-
-  </div>
+</div>
 
 
 

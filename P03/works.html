@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width = device-width, intial-scale=1">
 
-  <title> Works </title>
+  <title> Projects </title>
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
@@ -16,85 +16,67 @@
   <link rel="stylesheet" href="css/grid.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.sidebarBtn').click(function(){
-        $('.sidebar').toggleClass('active');
-        $('.sidebarBtn').toggleClass('toggle');
-      })
-    })
-  </script>
 
 </head>
 
 <body>
 
   <div class="container-fluid">
-    <div class="sidebar">
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="works.html">WORKS</a></li>
-        <li><a href="about.html">CONTACT</a></li>
-      </ul>
-      <button class="sidebarBtn">
-        <p>MENU</p>
-        <span> </span>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="index.html"><img src = "img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="works.html">projects</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#about">about</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+    <!-- <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
     <a href="http://www.twitter.com"><i class="fa fa-twitter" id="twitter"></i></a>
     <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
-    <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a>
+    <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a> -->
 
-    <div class="page">
-      <section>
-        <div class="row">
-          <div class="col project1">
-            <div class="col-50">
-              <h1> WO<br>RKS </h1>
-            </div>
-            <div class="col-25 worksheader2">
-              <h2><span class="header1"> A glimpse </span><br><span class="header2">of my projects</span> </h2>
-              <p> Here are a couple projects that I have worked on and completed to this date. Enjoy. More to come. Stay tuned.</p>
-            </div>
-            <div class="col-25 worksheader2">
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="row fullscreen">
+      <div class="col-md-12">
+          <h1 id="projects"> PROJECTS </h1>
+      </div>
+    </div>
 
-      <section>
-        <div class="row">
-          <div class="col project2">
-            <div class="col-33 thumbnails">
-              <a href="work1.html"><img src="img/thumbnail2.jpg" alt="ProjectOne"></a>
-            </div>
-            <div class="col-33 thumbnails">
-              <a href="work2.html"><img src="img/thumbnail1.jpg" alt="ProjectTwo"></a>
-            </div>
-            <div class="col-33 thumbnails">
-              <img src="img/thumbnail3.jpg" alt="ProjectOne">
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="footer">
-        <div class="col-25">
-        </div>
-        <div class="col-25">
-        </div>
-        <div class="col-25">
+    <div class="row space justify-content-center">
+      <div class="col-md-10">
+          <a href="work1.html"><img id="thumbnail" src="img/home7.jpg" alt="ProjectOne"></a>
+      </div>
+    </div>
+
+    <div class="row space justify-content-center">
+      <div class="col-md-10">
+          <a href="work2.html"><img id="thumbnail" src="img/home8.jpg" alt="ProjectTwo"></a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-6">
           <p>harrywong95@gmail.com <br> @Harry_W</p>
         </div>
-        <div class="col-25">
+        <div class="col-md-6">
           <p>Citations <br> StyleGuide <br> Github </p>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

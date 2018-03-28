@@ -1,4 +1,546 @@
+/* This is some default styling for the exercise */
+* {
+	box-sizing: border-box;
+}
 
+html,body {
+	margin : 0;
+	padding : 0;
+	font-size: 100%;
+}
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+@media all and (max-width: 1920px){
+	#welcome{
+		font-size: 7rem;
+		margin-top: 7%;
+		right: 40%;
+		position: absolute;
+	}
+
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 11em;
+		left: 48.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 47.75%;
+	  top: 37em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 9em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+}
+
+@media all and (max-width: 1690px) {
+	#welcome{
+		font-size: 7rem;
+		margin-top: 7%;
+		right: 38%;
+		position: absolute;
+	}
+
+	#down{
+		font-size: 3em;
+		position: absolute;
+		top: 11em;
+		left: 48.4%;
+	}
+
+	#downlabel{
+		font-family: lato;
+		font-size: 1em;
+		position: absolute;
+		left: 47.5%;
+		top: 37em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 8em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	#homepage{
+	  overflow: auto;
+	}
+
+	.fullscreen{
+		height:80vh;
+	}
+
+	#titles{
+		font-size: 6em;
+		margin-top: 4em;
+	}
+}
+
+@media all and (max-width: 1280px){
+	#welcome{
+		font-size: 6rem;
+		margin-top: 8%;
+		right: 32%;
+		position: absolute;
+	}
+
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 12em;
+		left: 46.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 45.4%;
+	  top: 40em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 7em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.fullscreen{
+		height:70vh;
+	}
+
+	#aboutpara{
+		font-family: open sans;
+		font-weight: 600;
+		color: #696969;
+		font-size: 1em;
+		line-height: 2em;
+		width: 100%;
+		margin-left: 0;
+		padding: 2em;
+	}
+
+	#hello{
+		color: #FF5851;
+		margin-left: .75em;
+		font-size: 4em;
+	}
+
+	#contactinfo{
+		font-family: open sans;
+		font-weight: 900;
+		font-size: 1em;
+		color: #696969;
+		line-height: 2em;
+		margin-left: 2em;
+	}
+
+	#name{
+		font-family: secular one;
+		margin-left: 1em;
+		margin-top: 1em;
+	}
+
+	#names{
+		line-height: 1em;
+		font-size: 4.5em;
+		margin-left: .4em;
+		white-space: nowrap;
+	}
+
+	#resume{
+		margin-left: 1.25em;
+	}
+
+	#titles{
+		font-size: 5em;
+		margin-top: 4em;
+	}
+}
+
+@media all and (max-width: 980px){
+	#welcome{
+		font-size: 5rem;
+		margin-top: 9%;
+		right: 30%;
+		position: absolute;
+	}
+
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 11em;
+		left: 46.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 44.4%;
+	  top: 38em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 6em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.fullscreen{
+		height:60vh;
+	}
+
+	#aboutpara{
+		font-family: open sans;
+		font-weight: 600;
+		color: #696969;
+		font-size: 1em;
+		line-height: 2em;
+		width: 100%;
+		margin-left: 0;
+		padding: 2em;
+	}
+
+	#hello{
+		color: #FF5851;
+		margin-left: .75em;
+		font-size: 3em;
+	}
+
+	#contactinfo{
+		font-family: open sans;
+		font-weight: 900;
+		font-size: 1em;
+		color: #696969;
+		line-height: 2em;
+		margin-left: 2em;
+	}
+
+	#name{
+		font-family: secular one;
+		margin-left: 1em;
+		margin-top: 1em;
+	}
+
+	#names{
+		line-height: 1em;
+		font-size: 3.5em;
+		margin-left: .5em;
+		white-space: nowrap;
+	}
+
+	#resume{
+		margin-left: 1.25em;
+	}
+
+	#titles{
+		font-size: 4em;
+		margin-top: 4em;
+	}
+
+	.projectpara{
+		padding-left: 3em;
+		padding-right :3em;
+	}
+
+	.projecttitle{
+		padding-left: 1.6em;
+		padding-top: .75em;
+	}
+}
+
+@media all and (max-width: 736px){
+	#welcome{
+		font-size: 4rem;
+		margin-top: 10%;
+		right: 28%;
+		position: absolute;
+	}
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 12em;
+		left: 46.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 44.4%;
+	  top: 40em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 3em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.fullscreen{
+		height:50vh;
+	}
+
+	#aboutpara{
+		font-family: open sans;
+		font-weight: 600;
+		color: #696969;
+		font-size: 1em;
+		line-height: 2em;
+		width: 100%;
+		margin-left: 0;
+		padding: 2em;
+	}
+
+	#hello{
+	  color: #FF5851;
+		margin-left: .75em;
+		font-size: 2em;
+	}
+
+	#contactinfo{
+		font-family: open sans;
+		font-weight: 900;
+		font-size: 1em;
+		color: #696969;
+		line-height: 2em;
+		margin-left: 2em;
+	}
+
+	#name{
+		font-family: secular one;
+		margin-left: 1em;
+		margin-top: 1em;
+	}
+
+	#names{
+		line-height: 1em;
+		font-size: 2.5em;
+		margin-left: .75em;
+		white-space: nowrap;
+	}
+
+	#resume{
+		margin-left: 1.25em;
+	}
+
+	#titles{
+		font-size: 3em;
+		margin-top: 4em;
+	}
+
+	.projectpara{
+		padding-left: 3em;
+		padding-right :3em;
+	}
+
+	.projecttitle{
+		padding-left: 1.6em;
+		padding-top: .75em;
+	}
+}
+
+@media all and (max-width: 480px){
+	#welcome{
+		font-size: 3rem;
+		margin-top: 11%;
+		right: 26%;
+		position: absolute;
+	}
+
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 8em;
+		left: 46.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 44.4%;
+	  top: 23em;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 3em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.fullscreen{
+		height:40vh;
+	}
+
+	#aboutpara{
+		font-family: open sans;
+		font-weight: 600;
+		color: #696969;
+		font-size: 1em;
+		line-height: 2em;
+		width: 100%;
+		margin-left: 0;
+		padding: 2em;
+	}
+
+	.projectpara{
+		padding-left: 3em;
+		padding-right :3em;
+	}
+
+	.projecttitle{
+		padding-left: 1.6em;
+		padding-top: .75em;
+	}
+
+	#titles{
+		font-size: 2em;
+		margin-top: 5em;
+	}
+
+	.navbar{
+		padding: 2.5em 2em 2em 2em;
+	}
+}
+
+@media all and (max-width: 375px){
+	#welcome{
+		font-size: 3rem;
+		margin-top: 11%;
+		right: 26%;
+		position: absolute;
+	}
+
+	#down{
+	  font-size: 3em;
+	  position: absolute;
+	  top: 12em;
+		left: 47.4%;
+	}
+
+	#downlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 44.4%;
+	  top: 40em;
+	}
+
+	#left{
+	  font-size: 3em;
+	  position: absolute;
+	  left: 1em;
+	  top: 3.4em;
+	}
+
+	#leftlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  left: 6em;
+	  top: 12em;
+	}
+
+	#right{
+	  font-size: 3em;
+	  position: absolute;
+	  right: .5em;
+	  top: 3.4em;
+	}
+
+	#rightlabel{
+	  font-family: lato;
+	  font-size: 1em;
+	  position: absolute;
+	  right: 4.5em;
+	  top: 12em;
+	}
+
+	#twitter{
+	  position: absolute;
+	  right:3em;
+	  top: 2.5em;
+	  color: black;
+	}
+
+	#instagram{
+	  position: absolute;
+	  right:6em;
+	  top: 2.5em;
+	  color: black;
+	}
+
+	#facebook{
+	  position: absolute;
+	  right:9em;
+	  top: 2.5em;
+	  color: black;
+	}
+
+	#projects{
+		color: #FF5851;
+		font-siZE: 3em;
+		margin-top: 15%;
+		margin-left: 30%;
+	}
+
+	.fullscreen{
+		height:30vh;
+	}
+
+	#aboutpara{
+		font-family: open sans;
+		font-weight: 600;
+		color: #696969;
+		font-size: .75em;
+		line-height: 2em;
+		width: 100%;
+		margin-left: 0;
+		padding: 2em;
+	}
+
+	#hello{
+		color: #FF5851;
+		margin-left: .75em;
+		font-size: 2em;
+		margin-top: 6em;
+	}
+
+	#resume a{
+	padding-bottom: 5em;
+	}
+
+	.projectpara{
+		padding-left: 5em;
+		padding-right 5em;
+	}
+
+	.navbar{
+	  padding: 2.5em 1em 2em 1.5em;
+	}
+}
+
+
+/*
 .project{
   height: 65em;
   background-color: #F8F8F8;
@@ -65,4 +607,4 @@
 
 .col-100{
   width: 100%;
-}
+} */

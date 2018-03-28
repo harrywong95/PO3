@@ -20,85 +20,66 @@
   <link rel="stylesheet" href="css/grid.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.sidebarBtn').click(function(){
-        $('.sidebar').toggleClass('active');
-        $('.sidebarBtn').toggleClass('toggle');
-      })
-    })
-  </script>
 
 </head>
 
 <body>
 
-    <div class="container-fluid">
-      <div class="sidebar">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="works.html">WORKS</a></li>
-          <li><a href="about.html">CONTACT</a></li>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="index.html"><img src = "img/logo.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="works.html">projects</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#about">about</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="about.html#contact">contact</a>
+          </li>
         </ul>
-        <button class="sidebarBtn">
-          <p>MENU</p>
-          <span> </span>
-        </button>
       </div>
+    </nav>
 
-    <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
-    <a href="http://www.twitter.com"><i class="fa fa-twitter" id="twitter"></i></a>
-    <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
-    <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a>
-
-    <div class="page">
-      <section>
-        <div class="row">
-          <div class="col project4">
-            <div class="col-50 aboutme">
-              <h2> Harry Wong </h2> <br> <h1>DESIGNER, <br> WEB DEVELOPER, <br> AND CREATIVE. </h1>
-              <p id="contactinfo"> Harrywong95@gmail.com <br> @Harry_W </p>
-            </div>
-            <div class="col-50">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="row">
-          <div class="col project3">
-            <div class="col-50 aboutmepara">
-              <h1> Hello, </h1>
-              <p>My name is Harry Wong and I am currently studying design at the School of Interactive Arts and Technology. Growing up, I always had a gravitation toward visuals. I preferred images over words and movies over books. Ultimately, my love for visuals has lead into the realm of user interface design. As I progress through my academic career, I have learned many technical skills, such as the utilization of different softwares, and many soft skills, such as being able to communicate my ideas. All in all, I design because I want to see people interact with my work, and evoke their emotions. </p>
-            </div>
-            <div class="col-50 resume">
-              <a href="#"> Download my resume. </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
-    <div class="footer">
-      <div class="col-25">
-      </div>
-      <div class="col-25">
-      </div>
-      <div class="col-25">
-        <p>harrywong95@gmail.com <br> @Harry_W</p>
-      </div>
-      <div class="col-25">
-        <p>Citations <br> StyleGuide <br> Github </p>
+    <div class="row fullscreen">
+      <div class="col-md-6" id="contact">
+        <h2 id="name"> Harry Wong </h2> <br> <h1 id="names">DESIGNER, <br> WEB DEVELOPER, <br> AND CREATIVE. </h1>
+        <p id="contactinfo"> Harrywong95@gmail.com <br> @Harry_W </p>
       </div>
     </div>
+
+    <div class="row space">
+      <div class="col-md-6" id="about">
+        <h1 id="hello"> Hello, </h1>
+        <p id="aboutpara">My name is Harry Wong and I am currently studying design at the School of Interactive Arts and Technology. Growing up, I always had a gravitation toward visuals. I preferred images over words and movies over books. Ultimately, my love for visuals has lead into the realm of user interface design. As I progress through my academic career, I have learned many technical skills, such as the utilization of different softwares, and many soft skills, such as being able to communicate my ideas. All in all, I design because I want to see people interact with my work, and evoke their emotions. </p>
+      </div>
+      <div class="col-md-6">
+        <a href="#" id="resume"> Download my resume. </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-md-6">
+          <p>harrywong95@gmail.com <br> @Harry_W</p>
+        </div>
+        <div class="col-md-6">
+          <p>Citations <br> StyleGuide <br> Github </p>
+        </div>
+      </div>
+    </footer>
+
   </div>
 
-
-
-
-
+    <!-- <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+    <a href="http://www.twitter.com"><i class="fa fa-twitter" id="twitter"></i></a>
+    <a href="http://www.facebook.com"><i class="fa fa-facebook" id="facebook"></i></a>
+    <a href="http://www.instagram.com"><i class="fa fa-instagram" id="instagram"></i></a> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
