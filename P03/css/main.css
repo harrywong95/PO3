@@ -1,21 +1,21 @@
 #twitter{
   position: absolute;
   right:7em;
-  top: 2.5em;
+  top: 3em;
   color: black;
 }
 
 #instagram{
   position: absolute;
   right:10em;
-  top: 2.5em;
+  top: 3em;
   color: black;
 }
 
 #facebook{
   position: absolute;
   right:13em;
-  top: 2.5em;
+  top: 3em;
   color: black;
 }
 
@@ -25,19 +25,21 @@
 
 #name{
   font-family: secular one;
-  margin-left: 4.75em;
-  margin-top: 5em;
+  font-size: 2vw;
+  margin-top: 20%;
+  margin-left: 16.5%;
 }
 
 #names{
   line-height: 1em;
-  margin-left: 2.25em;
+  margin-left: 2em;
+  font-size: 4vw;
 }
 
 #contactinfo{
   font-family: open sans;
   font-weight: 900;
-  font-size: 1em;
+  font-size: .9vw;
   color: #696969;
   line-height: 2em;
   margin-left: 9em;
@@ -97,10 +99,34 @@
 }
 
 #welcome{
-  font-size: 10rem;
-  margin-top: 7%;
-  right: 36%;
+  font-size:8vw;
+  margin-top:4%;
+  left: 20%;
   position: absolute;
+  width:100%;
+}
+
+#welcome2{
+  font-size: 1.25vw;
+  margin-top:12%;
+  left: 44%;
+  position: absolute;
+  width:100%;
+  font-family: crimson;
+  font-style: italic;
+  font-weight: 900;
+  color: #FF5851;
+}
+
+#projects2{
+  font-size: 1.25vw;
+  left: 41%;
+  position: absolute;
+  width:100%;
+  font-family: crimson;
+  font-style: italic;
+  font-weight: 900;
+  color: #FF5851;
 }
 
 #hello{
@@ -108,10 +134,20 @@
 }
 
 #projects{
-  color: #FF5851;
-  font-siZE: 10em;
+  font-siZE: 8vw;
   margin-top: 15%;
+  margin-left: 32%;
+}
+
+#on{
+  position: absolute;
+  margin-top: 18%;
   margin-left: 30%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 h1{
@@ -179,16 +215,34 @@ h1{
 #down{
   font-size: 3em;
   position: absolute;
-  top: 11.5em;
+  margin-top: 29%;
+  left: 47%;
 }
 
 #downlabel{
   font-family: lato;
   font-size: 1em;
   position: absolute;
-  left: 49.4%;
-  top: 34em;
+  margin-top: 28.5%;
+  left: 46.5%;
 }
+
+#scroll{
+  font-size: 3em;
+  position: absolute;
+  left: 4.5%;
+  margin-top: 5%;
+
+}
+
+#scrolllabel{
+  font-family: lato;
+  font-size: 1em;
+  position: absolute;
+    left: 4%;
+    margin-top: 5%;
+}
+
 .arrow {
   text-align: center;
   margin: 8% 0;
@@ -247,7 +301,18 @@ h1{
   }
 }
 
-.seemywork{
+.thumbnail:hover {
+   position:relative;
+   width:105%;
+   height:auto;
+   display:block;
+   z-index:999;
+   margin-left: -2.5%;
+}
+
+
+
+/* .seemywork{
   text-decoration: none;
   font-family: Crimson;
   background: none;
@@ -268,7 +333,7 @@ h1{
 
 .seemywork:focus{
   outline: none;
-}
+} */
 
 .header1{
   font-weight: bold;
@@ -310,27 +375,159 @@ h1{
   font-family: open sans;
   font-weight: 600;
   color: #696969;
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 2em;
 }
 
 .projecttitle{
-  font-size: 2em;
+  font-size: 1.25em;
+  font-family: secular one;
+  margin-left: 0;
+  padding-top: 1em;
+}
+
+.projecttitles{
+  font-size: 1.25em;
   font-family: secular one;
   margin-left: 0;
 }
 
-#lens{
-  background-color:#FF5851;
+#brief{
+  padding-top: 9em;
+  color: #ff5851;
 }
 
-#thumbnail{
+#members{
+  padding-top: 10em;
+}
+
+#objective{
+  padding-top: 3em;
+  color: #ff5851;
+}
+
+#response{
+  padding-top: 3em;
+  color: #ff5851;
+}
+
+#brief1{
+  padding-top: 9em;
+  color: #00b894;
+}
+
+#objective1{
+  padding-top: 3em;
+  color: #00b894;
+}
+
+#response1{
+  padding-top: 3em;
+  color: #00b894;
+}
+
+.summary{
+  background-color:#ff5851;
+}
+
+.summarytitle{
+  font-size: 3em;
+  padding-top: 4em;
+  color: white;
+}
+
+.sumprojectpara{
+  font-family: open sans;
+  font-weight: 600;
+  color: white;
+  font-size: 1.25em;
+  line-height: 2em;
+}
+
+#processtitle{
+  padding-top: 10em;
+  color: #ff5851;
+  font-size: 1.25em;
+  font-family: secular one;
+}
+
+#processtitle1{
+  padding-top: 10em;
+  color: #00b894;
+  font-size: 1.25em;
+  font-family: secular one;
+}
+
+.roletitle{
+  padding-top: 4em;
+  color: #ff5851;
+  font-size: 1.25em;
+  font-family: secular one;
+}
+
+.roletitle1{
+  padding-top: 4em;
+  color: #00b894;
+  font-size: 1.25em;
+  font-family: secular one;
+}
+
+#lens{
+  background-color:#ff5851;
+}
+
+.workflowimage{
   width: 100%;
+  padding-top: 4em;
+}
+
+.roleimage{
+  width: 100%;
+  padding-top: 4em;
+}
+
+#finalproduct{
+  background-color: #F5F5F5;
+}
+
+#finaltitle{
+  font-size: 3em;
+  padding-top: 4em;
+  color: #ff5851;
+}
+
+#finaltitle1{
+  font-size: 3em;
+  padding-top: 4em;
+  color: #00b894;
+}
+
+.summary1{
+  background-color: #00b894;
+}
+
+#finalimage{
+  width: 100%;
+  padding-top: 4em;
+}
+
+#vtl{
+  background-color: #00b894;
+}
+
+.thumbnail{
+  width: 100%;
+  margin-top: 0%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 #titles{
   font-size: 10em;
-  margin-left: 5em;
+  margin-left: 4.5em;
   margin-top: 2em;
   color: white;
 }

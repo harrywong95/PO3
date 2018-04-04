@@ -19,23 +19,15 @@
   <link rel="stylesheet" href="css/grid.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.sidebarBtn').click(function(){
-        $('.sidebar').toggleClass('active');
-        $('.sidebarBtn').toggleClass('toggle');
-      })
-    })
-  </script>
 
 </head>
 
 <body>
 
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="whitesidebar">
     <nav class="navbar navbar-expand-lg navbar-light">
-      <a href="index.html"><img src = "img/logo.png"></a>
+      <a href="index.html"><img src = "img/logo.png" alt="mynamelogo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,83 +54,98 @@
 
     <div class="row space">
       <div class="row justify-content-md-center">
-          <div class="col-auto">
+        <div class="col-xl-8">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="projecttitles" id="brief"> BRIEF </h3>
+              <p class="projectpara"> Design : 2017 October - 2017 December <br> Role : Graphic Designer, UI/UX Designer</p>
+            </div>
+            <div class="col-md-6">
+              <p class="projectpara" id="members"> Team Members : Harry Wong, Wendy Lu, Shirley Mao <br> Tools : Adobe Illustrator, Adobe Photoshop</p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3 class="projecttitle"> Brief </h3>
-            <p class="projectpara"> Design : 2017 October - 2017 December <br> Role : Graphic Designer, UI/UX Designer <br> Team Members : Harry Wong, Wendy Lu, Shirley Mao <br> Tools : Adobe Illustrator, Adobe Photoshop </p>
+            <div class="row">
+            <div class="col-md-6">
+              <h3 class="projecttitles" id="objective"> OBJECTIVE </h3>
+              <p class="projectpara"> In a speculative design course, a project required teams to design a speculative object for a provocation. Speculative means designing for the future, which tested students the understanding, interpreting, and thinking of future designs. </p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="projecttitles" id="response"> RESPONSE </h3>
+              <p class="projectpara"> We decided to create a privacy device for parents. This device was attached to the back of a child’s neck, where it had the ability to track the child’s biometrics. A phone application was used to receive the data and display ir for parents to see.  </p>
+            </div>
           </div>
-          <div class="col-md-3">
-            <h3 class="projecttitle"> Objective</h3>
-            <p class="projectpara"> In a speculative design course, a project required teams to design a speculative object for a provocation. Speculative means designing for the future, which tested students the understanding, interpreting, and thinking of future designs. </p>
-          </div>
-          <div class="col-md-3">
-            <h3 class="projecttitle"> Response </h3>
-            <p class="projectpara"> We decided to create a privacy device for parents. This device was attached to the back of a child’s neck, where it had the ability to track the child’s biometrics. A phone application was used to receive the data and display ir for parents to see.  </p>
-          </div>
-        <div class="col-auto">
         </div>
       </div>
     </div>
 
-    <div class="row space">
+    <div class="row space summary">
       <div class="row justify-content-md-center">
-          <div class="col-auto">
-          </div>
-          <div class="col-xl-4">
-            <h1 class="projecttitle"> SUMMARY  </h1>
-            <p class="projectpara"> This broad topic allowed us to focus on areas that we were interested in. As a group of three, we decided to create a privacy device for parents. This device was attached to the back of a child’s neck, where it had the ability to track the child’s biometrics. A phone application was used to receive the data and display for the parents to see. This project commented on how much privacy a child can get with their parents before it becomes too strict or lenient.  </p>
-          </div>
-          <div class="col-xl-4">
-            <img id="vtlimage" src="img/screens.png">
-          </div>
-          <div class="col-auto">
+          <div class="col-xl-8">
+            <h1 class="summarytitle"> SUMMARY  </h1>
+            <p class="sumprojectpara"> This broad topic allowed us to focus on areas that we were interested in. As a group of three, we decided to create a privacy device for parents. This device was attached to the back of a child’s neck, where it had the ability to track the child’s biometrics. A phone application was used to receive the data and display for the parents to see. This project commented on how much privacy a child can get with their parents before it becomes too strict or lenient.  </p>
           </div>
         </div>
     </div>
 
-    <div class="row space">
+    <div class="row">
       <div class="row justify-content-md-center">
-        <div class="col-auto">
-        </div>
-        <div class="col-xl-4">
-          <img id="vtlimage" src="img/workflow.png">
-        </div>
-        <div class="col-xl-4">
-          <h1 class="projecttitle"> PROCESS  </h1>
+        <div class="col-xl-8">
+          <h1 class="projecttitle" id="processtitle"> PROCESS  </h1>
           <p class="projectpara"> The process begins with all three of us pitching an idea to one another. I pitched the idea of focusing on biometric data and how it can be hacked. Many critiques and feedback later, we combined biometric data and children mobile use together. This left us with the core idea that we see in our final project.   </p>
         </div>
-        <div class="col-auto">
+        <div class="col-xl-8">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="workflowimage" src="img/workflow.png" alt="workflow">
+            </div>
+            <div class="col-md-6">
+              <img class="workflowimage" src="img/workflow1.jpg" alt="workflow">
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="row space">
       <div class="row justify-content-md-center">
-        <div class="col-auto">
-        </div>
-        <div class="col-xl-4">
-          <h1 class="projecttitle"> MY ROLE  </h1>
+        <div class="col-xl-8">
+          <h1 class="roletitle"> MY ROLE  </h1>
           <p class="projectpara"> Since my strengths revolved around visuals, I was in charge of all graphic design work, and wireframing of the mobile application. In the beginning stages of designing posters and wireframes, I had created several different versions so that my team can choose which designs were working and which ones were not. Many elements came into consideration, such as where to place images and icons, what font type and font size to use, and what the colour palette was going to be. In addition to wireframing the screens, I also determined the workflow of the app. The workflow was placed into a flowchart like template that showed the user which screen led to which screens. This user interface workflow became vital, as it became the guide for the animated user interface video.</p>
-      </div>
-      <div class="col-xl-4">
-        <img id="vtlimage" src="img/posters.png">
-      </div>
-      <div class="col-auto">
-      </div>
+        </div>
+        <div class="col-xl-8">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="roleimage" src="img/poster2.jpg" alt="poster">
+            </div>
+            <div class="col-md-6">
+              <img class="roleimage" src="img/poster3.jpg" alt="poster">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8">
+          <h1 class="roletitle"> CHALLENGES  </h1>
+          <p class="projectpara"> One of the major challenges that we faced as a group was honing down on specific boundaries that made this a unbiased commentary on parenting. We came up with our final idea based on it being a way to observe their children through biometrics, location, etc. Challenges that I faced were creating user interfaces that weren't meant for today's use, rather for future use.</p>
+        </div>
       </div>
     </div>
 
-    <div class="row space">
+    <div class="row space" id="finalproduct">
       <div class="row justify-content-md-center">
-        <div class="col-auto">
-        </div>
-        <div class="col-xl-4">
-        <img id="vtlimage" src="img/home2.jpg">
-        </div>
-        <div class="col-xl-4">
-          <h1 class="projecttitle"> FINAL PRODUCT </h1>
+        <div class="col-xl-8">
+          <h1 class="projecttitle" id="finaltitle"> FINAL PRODUCT </h1>
           <p class="projectpara"> In the final showcase, we had shown six posters in total, a video scenario, and an animated user interface video. Our project was one of the strongest in the entire class from the beginning to end. This is in large part due to the fact that every team member overachieved in their assigned work, and gave major critiques to one another.  </p>
+        </div>
+        <div class="col-xl-8">
+          <img id="finalimage" src="img/home2.jpg" alt="finalproduct">
+        </div>
+      </div>
+    </div>
+
+    <div class="row space summary">
+      <div class="row justify-content-md-center">
+        <div class="col-xl-8">
+          <h1 class="summarytitle"> REFLECTION  </h1>
+          <p class="sumprojectpara">In the end this project was able to not only showcase my skills but also enhance them. The understanding of user interface design and user experience played a major role in bringing this project to life as it was the core idea that we built off of.</p>
         </div>
       </div>
     </div>
@@ -146,7 +153,7 @@
     <footer>
       <div class="row">
         <div class="col-md-6">
-          <p>harrywong95@gmail.com <br> @Harry_W</p>
+          <p>Email : harrywong95@gmail.com <br> Twitter : @Harry_W</p>
         </div>
         <div class="col-md-6">
           <p>Citations <br> StyleGuide <br> Github </p>
